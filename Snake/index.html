@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake – Winter Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="snow" id="snow"></div>
+
+    <svg class="snowman" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="100" cy="268" rx="95" ry="12" fill="#ffffff" stroke="#c5dcf2" stroke-width="2"/>
+        <circle cx="100" cy="205" r="52" fill="#ffffff" stroke="#b7d3ee" stroke-width="3"/>
+        <circle cx="100" cy="132" r="38" fill="#ffffff" stroke="#b7d3ee" stroke-width="3"/>
+        <circle cx="100" cy="76" r="28" fill="#ffffff" stroke="#b7d3ee" stroke-width="3"/>
+        <path d="M64 130 L20 105 M38 114 L30 96" stroke="#6b4a2b" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path d="M136 130 L180 105 M162 114 L170 96" stroke="#6b4a2b" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <rect x="70" y="98" width="60" height="12" rx="6" fill="#2b6cb0"/>
+        <rect x="112" y="104" width="14" height="32" rx="5" fill="#1f4e8c"/>
+        <rect x="76" y="40" width="48" height="8" rx="3" fill="#1f4e8c"/>
+        <rect x="84" y="14" width="32" height="30" rx="3" fill="#2b6cb0"/>
+        <circle cx="90" cy="72" r="3" fill="#1b2a41"/>
+        <circle cx="110" cy="72" r="3" fill="#1b2a41"/>
+        <path d="M100 79 L124 84 L100 88 Z" fill="#f08c2e"/>
+        <circle cx="100" cy="150" r="3.5" fill="#1b2a41"/>
+        <circle cx="100" cy="190" r="3.5" fill="#1b2a41"/>
+        <circle cx="100" cy="212" r="3.5" fill="#1b2a41"/>
+        <circle cx="100" cy="234" r="3.5" fill="#1b2a41"/>
+    </svg>
+
+    <div class="game-wrapper">
+        <div class="hud">
+            <span id="score">Punkte: 0</span>
+            <span id="mode">Modus: –</span>
+            <span class="hud-buttons">
+                <button id="pause-btn" type="button">⏸ Pause</button>
+                <button id="menu-btn" type="button">⌂ Menü</button>
+            </span>
+        </div>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="700" height="600"></canvas>
+
+            <div id="overlay" class="overlay">
+                <h1 id="overlay-title">Snake</h1>
+                <p id="overlay-text">Winter Edition</p>
+                <button id="start-btn" type="button">Spiel Starten</button>
+                <button id="demo-start-btn" type="button">Demo Starten</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
